@@ -1,38 +1,50 @@
-# Backend simples para portfólio
+# Backend Simples para Portfólio
 
 ## Visão Geral
 
-Fiz esse backend apenas para receber emails e se as pessoas quiser comentar até eu colocar ele numa hospedagem melhor. 
+Este backend foi criado para receber e-mails e permitir comentários enquanto o projeto não está hospedado em uma solução mais robusta.
 
 ## Tabela de Conteúdo
 
-- [Sobre Mim](#sobre-mim)
-- [Habilidades](#habilidades)
-- [Projetos](#projetos)
+- [Dependências](#dependencias)
+- [Como Usar](#como-usar)
+- [Variáveis de Ambiente (Env)](#variaveis-de-ambiente-env)
 - [Contato](#contato)
 
 ## Dependências
 
-- **axios**
-- **cors**
-- **dotenv**
-- **express**
-- **nodemailer**
+- **axios**: Para fazer requisições HTTP.
+- **cors**: Para configurar CORS.
+- **dotenv**: Para carregar variáveis de ambiente de um arquivo `.env`.
+- **express**: Framework para criar o servidor.
+- **nodemailer**: Para enviar e-mails.
 
-## Como usar
+## Como Usar
 
-``npm i axios cors dotenv express nodemailer``
+1. **Instale as dependências**:
 
---
+    ```bash
+    npm install axios cors dotenv express nodemailer
+    ```
 
-``npm start``
+2. **Inicie o servidor**:
 
-## Env
+    ```bash
+    npm start
+    ```
 
-- **PORT=3000 || Ou qual desejar**
-- **EMAIL=Seu email**
-- **EMAIL_PASS=Sua senha**
-- **URL=sua url || 127.0.0.1**
+## Variáveis de Ambiente (Env)
+
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
+
+- **PORT**: A porta em que o servidor irá rodar (por exemplo, `3000` ou qualquer outra porta desejada).
+- **EMAIL**: Seu e-mail para envio.
+- **EMAIL_PASS**: Sua senha de e-mail.
+- **URL**: URL do frontend (por exemplo, `http://localhost:3000` ou `http://127.0.0.1`).
+
+Exemplo de `.env`:
+
+PORT=3000 EMAIL=seuemail@exemplo.com EMAIL_PASS=suaSenha URL=http://localhost:3000
 
 
 ## Contato
@@ -41,4 +53,4 @@ Fique à vontade para entrar em contato comigo por meio do meu [e-mail](mailto:d
 
 ---
 
-*Obrigado por visitar o meu projeto! Volte sempre!.*
+*Obrigado por visitar o meu projeto!
