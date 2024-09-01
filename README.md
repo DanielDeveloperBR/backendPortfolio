@@ -6,9 +6,9 @@ Fiz esse backend apenas para receber emails e se as pessoas quiser comentar até
 
 ## Tabela de Conteúdo
 
-- [Sobre Mim](#sobre-mim)
-- [Habilidades](#habilidades)
-- [Projetos](#projetos)
+- [Dependências](#dependencias)
+- [Usando](#usando)
+- [Env](#env)
 - [Contato](#contato)
 
 ## Dependências
