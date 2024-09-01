@@ -12,8 +12,8 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
   }));
   app.use(express.static(path.join(__dirname, '..index.html'))); 
-// Proxy para arquivos estáticos do GitHub
-app.get('/static/*', async (req, res) => {
+
+  app.get('/static/*', async (req, res) => {
   try {
     const fileUrl = `${process.env.URL}/${req.params[0]}`;
     const response = await axios.get(fileUrl, { responseType: 'stream' });
@@ -25,6 +25,7 @@ app.get('/static/*', async (req, res) => {
 app.get('/', (req, res) => {
     res.redirect(process.env.URL);
   });
+  
 app.use(routerEmail)
 
 module.exports = app
