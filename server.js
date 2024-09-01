@@ -11,7 +11,7 @@ app.use(cors({
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
   }));
-  app.use(express.static(path.join(__dirname, '..index.html'))); 
+  app.use(express.static(path.join(__dirname, '../index.html'))); 
 
   app.get('/static/*', async (req, res) => {
   try {
@@ -23,7 +23,7 @@ app.use(cors({
   }
 });
 app.get('/', (req, res) => {
-    res.redirect(process.env.URL);
+    res.redirect(`${process.env.URL}`);
   });
   
 app.use(routerEmail)
